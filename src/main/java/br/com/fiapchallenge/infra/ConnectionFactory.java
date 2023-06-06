@@ -10,7 +10,7 @@ public class ConnectionFactory {
 
 	public static Connection getConnection() {
 		try {
-			return DriverManager.getConnection("jdbc:mysql://localhost/TesteDB", "root", "123");
+			return DriverManager.getConnection("jdbc:mysql://localhost/TesteFiapDB", "root", "123");
 		} catch (SQLException ex) {
 			throw new RuntimeException(ex);
 		}
