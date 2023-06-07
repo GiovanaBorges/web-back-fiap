@@ -5,7 +5,7 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+10-jvmci-22.3-b13"/>
     <property name="sun.boot.library.path" value="C:\Users\giovana.borges\.jdks\graalvm-ce-17\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\giovana.borges\Documents\Fiap-challenge"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\giovana.borges\Documents\Fintech2_FIAP"/>
     <property name="java.vm.vendor" value="GraalVM Community"/>
     <property name="java.vendor.url" value="https://www.graalvm.org/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\giovana.borges\Documents\Fiap-challenge"/>
+    <property name="user.dir" value="C:\Users\giovana.borges\Documents\Fintech2_FIAP"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="17.0.6+10-jvmci-22.3-b13"/>
     <property name="os.arch" value="amd64"/>

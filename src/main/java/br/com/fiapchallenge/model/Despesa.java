@@ -4,17 +4,20 @@ public class Despesa {
 	private Long Id;
 	private double valor_despesa;
 	private Date dt_despesa;
+
+	private String tipo_despesa;
 	private int id_usuario;
 
-	public Despesa(double valor_despesa, Date dt_despesa, int id_usuario, Long Id) {
+	public Despesa(double valor_despesa, Date dt_despesa, String tipo,int id_usuario,Long Id) {
 		this.valor_despesa = valor_despesa;
 		this.dt_despesa = dt_despesa;
+		this.tipo_despesa = tipo;
 		this.id_usuario = id_usuario;
 		this.Id = Id;
 	}
 
-	public Despesa(double valor_despesa, Date dt_despesa, int id_usuario) {
-		this(valor_despesa, dt_despesa, id_usuario,null);
+	public Despesa(double valor_despesa, Date dt_despesa, String tipo,int id_usuario) {
+		this(valor_despesa, dt_despesa,tipo, id_usuario,null);
 	}
 
 
@@ -48,5 +51,13 @@ public class Despesa {
 
 	public void setId_usuario(int id_usuario) {
 		this.id_usuario = id_usuario;
+	}
+
+	public String getTipo_despesa() {
+		return tipo_despesa;
+	}
+
+	public void setTipo_despesa(String tipo_despesa) {
+		this.tipo_despesa = tipo_despesa;
 	}
 }

@@ -1,0 +1,13 @@
+br\com\fiapchallenge\test\despesa\GetById.class
+br\com\fiapchallenge\dao\despesaDAO\DespesaDAO.class
+br\com\fiapchallenge\test\despesa\GetAll.class
+br\com\fiapchallenge\dao\investimento\InvestimentoDAO.class
+br\com\fiapchallenge\model\Investimento.class
+br\com\fiapchallenge\test\despesa\CreateDespesa.class
+br\com\fiapchallenge\model\Despesa.class
+br\com\fiapchallenge\dao\investimento\IInvestimento.class
+br\com\fiapchallenge\test\investimento\GetAll.class
+br\com\fiapchallenge\infra\ConnDB.class
+br\com\fiapchallenge\dao\despesaDAO\IDespesa.class
+br\com\fiapchallenge\test\investimento\CreateInvestimento.class
+br\com\fiapchallenge\test\investimento\GetId.class
