@@ -1,0 +1,66 @@
+create database TesteDB;
+
+use TesteDB;
+
+CREATE TABLE t_gastos (
+  Id INT NOT NULL AUTO_INCREMENT,
+  dsc_gastos VARCHAR(100),
+  dt_gastos DATE,
+  id_usuario INT,
+  vl_gastos NUMERIC(10,2),
+  nr_conta INT,
+  PRIMARY KEY (Id)
+);
+
+CREATE TABLE t_usuario (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(255) NOT NULL,
+    senha VARCHAR(255)
+);
+
+CREATE TABLE t_rendamensal (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    dsc_renda VARCHAR(255),
+    data DATE,
+    valor DECIMAL(10,2),
+    id_usuario INT,
+    id_conta INT
+);
+
+CREATE TABLE t_contaUsuario (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    nr INT,
+    agencia VARCHAR(255),
+    banco VARCHAR(255),
+    usuario VARCHAR(255)
+);
+
+CREATE TABLE t_despesa (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    vl_despesa DECIMAL(10,2),
+    dt_despesa DATE,
+    id_usuario INT,
+    CONSTRAINT fk_id_usuario
+    FOREIGN KEY (id_usuario)
+    REFERENCES t_usuario (Id)
+);
+
+CREATE TABLE t_investimento (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nm_investimento VARCHAR(50),
+    ds_investimento VARCHAR(50),
+    dt_inicial DATE,
+    dt_final DATE,
+    vl_investimento DECIMAL(10,2),
+    id_usuario INT,
+    CONSTRAINT fk_id_usuario_investimento
+    FOREIGN KEY (id_usuario)
+    REFERENCES t_usuario (Id)
+);
+
+select * from t_gastos;
+select * from t_contaUsuario;
+select * from t_usuario;
+select * from t_rendamensal;
+
+drop table t_gastos
